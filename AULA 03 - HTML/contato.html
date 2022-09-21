@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <h1>Entre em contato!</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Entre em contato através do formulário abaixo:</legend>
+                <br>
+                <label for="name">Nome:</label>
+                <input type="text" id="name">
+                <br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email">
+                <br><br>
+                <label for="tel">Telefone:</label>
+                <input type="tel" id="tel">
+                <br><br>
+                <label for="seletor-assunto">Selecione um assunto:</label>
+                    <select id="seletor-assunto">
+                        <option value="">--Por favor, selecione um assunto-</option>
+                        <option value="elogios">Elogios</option>
+                        <option value="reclamações">Reclamações</option>
+                        <option value="enterview">Entrevista</option>
+                        <option value="info">Mais informações</option>
+                    </select>
+                <br><br>
+                <legend>Escolha seu gênero:</legend>
+                <div id="checkbox1">
+                    <input type="checkbox" id="man">
+                    <label for="man">Homem</label>
+                </div>   
+                <div id="checkbox2">
+                    <input type="checkbox" id="women">
+                    <label for="man">Mulher</label>
+                </div> 
+                <div id="checkbox3">
+                    <input type="checkbox" id="others">
+                    <label for="man">LBGTQIA+</label>
+                </div>
+                <br>
+                <label for="msg">Deixe aqui sua mensagem:</label>
+                <textarea id="mensage" cols="60" rows="10"></textarea>
+                <br><br>
+                <div id="checkbox-termosaceitos">
+                    <input type="checkbox" id="yes">
+                    <label for="yes">Marque se você aceita os termos de confidencialidade das informações                       enviadas</label>
+                </div>
+                <br><br>
+                <button type="button" onclick="alert('Mensagem enviada com sucesso!')">Enviar!</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
